@@ -6,7 +6,7 @@ Drakov API Blueprint Mock Server Docker Image
 Latest Dredd: [![npm version](https://badge.fury.io/js/drakov.svg)](https://www.npmjs.com/package/drakov)
 Latest Node: [![node tag](https://img.shields.io/github/tag/nodejs/node.svg)](https://github.com/nodejs/node)
 
-This image using Drakov 1.0.4 with Alpine Node 9.11.1
+This image using [Drakov](https://github.com/Aconex/drakov) 1.0.4 with Alpine Node 9.11.1
 
 # Usage
 
