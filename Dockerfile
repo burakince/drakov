@@ -11,4 +11,5 @@ RUN apk update \
 
 ENV PATH ${PATH}:/node_modules/.bin
 
-ENTRYPOINT ["drakov","-f","/blueprints/*.md","-p","3000","--public","--debugMode"]
+CMD ["-f","/blueprints/*.md"]
+ENTRYPOINT ["drakov","-p","3000","--public","--debugMode"]

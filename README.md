@@ -13,3 +13,9 @@ This image using [Drakov](https://github.com/Aconex/drakov) 1.0.4 with Alpine No
 ```
 docker run -it --rm -v $(pwd):/blueprints -p 3000:3000 burakince/drakov
 ```
+
+or
+
+```
+docker run -it --rm -v $(pwd):/blueprints -p 3000:3000 burakince/drakov -f /blueprints/BLUEPRINT_FILE
+```
