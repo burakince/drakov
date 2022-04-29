@@ -1,15 +1,25 @@
-FROM node:9.11.2-alpine
+ARG NODE_VERSION=16.15.0
+
+FROM node:${NODE_VERSION} as foundation
 
 LABEL maintainer="Burak Ince <burak.ince@linux.org.tr>"
 
-RUN apk update \
-  && apk add --no-cache git make gcc g++ python \
-  && npm config set loglevel error \
-  && npm install drakov@1.0.4 \
-  && apk del git make gcc g++ python \
-  && rm -rf /var/cache/apk/*
+WORKDIR /usr/app
+
+ARG DRAKOV_VERSION=2.0.1
+ARG NPM_VERSION=8.8.0
+
+RUN npm config set loglevel error
+RUN npm install -g npm@$NPM_VERSION
+RUN npm install drakov@$DRAKOV_VERSION
+
+FROM node:${NODE_VERSION}-slim
+
+WORKDIR /usr/app
+
+COPY --from=foundation /usr/app/node_modules /node_modules
 
 ENV PATH ${PATH}:/node_modules/.bin
 
-CMD ["-f","/blueprints/*.md"]
-ENTRYPOINT ["drakov","-p","3000","--public"]
+CMD [ "-f", "/blueprints/*.md" ]
+ENTRYPOINT [ "drakov", "-p", "3000", "--public" ]
