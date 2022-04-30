@@ -2,7 +2,7 @@
 
 Drakov API Blueprint Mock Server Docker Image
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/burakince/drakov.svg)](https://hub.docker.com/r/burakince/drakov/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/burakince/drakov.svg)](https://hub.docker.com/r/burakince/drakov/) [![drakov docker image build and push](https://github.com/burakince/drakov/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/burakince/drakov/actions/workflows/docker-publish.yml)
 
 # Usage
 
