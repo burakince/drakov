@@ -7,7 +7,7 @@ LABEL maintainer="Burak Ince <burak.ince@linux.org.tr>"
 WORKDIR /usr/app
 
 ARG DRAKOV_VERSION=2.0.1
-ARG NPM_VERSION=8.14.0
+ARG NPM_VERSION=8.15.0
 
 RUN npm config set loglevel error
 RUN npm install -g npm@$NPM_VERSION
