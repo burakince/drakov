@@ -2,7 +2,11 @@
 
 Drakov API Blueprint Mock Server Docker Image
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/burakince/drakov.svg)](https://hub.docker.com/r/burakince/drakov/) [![drakov docker image build and push](https://github.com/burakince/drakov/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/burakince/drakov/actions/workflows/docker-publish.yml)
+[![drakov docker image build and push](https://github.com/burakince/drakov/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/burakince/drakov/actions/workflows/docker-publish.yml)
+![Docker Pulls](https://img.shields.io/docker/pulls/burakince/drakov)
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/burakince/drakov?sort=date)
+![Docker Image Version (latest semver)](https://img.shields.io/docker/v/burakince/drakov?sort=semver)
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/drakov)](https://artifacthub.io/packages/search?repo=drakov)
 
 # Usage
 
