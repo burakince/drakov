@@ -112,6 +112,7 @@ jobs:
           labels: |
             io.artifacthub.package.readme-url=https://raw.githubusercontent.com/${{ env.IMAGE_NAME }}/main/README.md
             io.artifacthub.package.maintainers=[{"name":"burakince","email":"burak.ince@linux.org.tr"}]
+            io.artifacthub.package.logo-url=https://raw.githubusercontent.com/Aconex/drakov/master/drakov.png
             io.artifacthub.package.keywords=drakov,javascript,mock-server,api-blueprint
             io.artifacthub.package.license=MIT
             io.artifacthub.package.alternative-locations=docker.io/${{ env.IMAGE_NAME }}
