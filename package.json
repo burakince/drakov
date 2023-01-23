@@ -1,0 +1,19 @@
+{
+  "name": "drakov",
+  "description": "Drakov API Blueprint Mock Server Docker Image",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burakince/drakov.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/burakince/drakov/issues"
+  },
+  "homepage": "https://github.com/burakince/drakov#readme",
+  "dependencies": {
+    "drakov": "^2.0.1"
+  }
+}

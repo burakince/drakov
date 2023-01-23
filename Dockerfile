@@ -1,19 +1,15 @@
-ARG NODE_VERSION=16.17.0
-
-FROM node:${NODE_VERSION} as foundation
+FROM node:16.17.0 as foundation
 
 LABEL maintainer="Burak Ince <burak.ince@linux.org.tr>"
 
+COPY package.json package-lock.json /usr/app/
+
 WORKDIR /usr/app
 
-ARG DRAKOV_VERSION=2.0.1
-ARG NPM_VERSION=8.19.1
-
 RUN npm config set loglevel error
-RUN npm install -g npm@$NPM_VERSION
-RUN npm install drakov@$DRAKOV_VERSION
+RUN npm install
 
-FROM node:${NODE_VERSION}-slim
+FROM node:16.17.0-slim
 
 WORKDIR /usr/app
 
