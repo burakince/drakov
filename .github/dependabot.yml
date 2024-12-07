@@ -9,9 +9,13 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     reviewers:
       - "burakince"
+    groups:
+      actions-deps:
+        patterns:
+          - "*"
 
   - package-ecosystem: "npm"
     directory: "/"
@@ -19,6 +23,10 @@ updates:
       interval: "daily"
     reviewers:
       - "burakince"
+    groups:
+      npm-deps:
+        patterns:
+          - "*"
 
   - package-ecosystem: "docker"
     directory: "/"
@@ -29,3 +37,7 @@ updates:
         update-types: ["version-update:semver-major"]
     reviewers:
       - "burakince"
+    groups:
+      docker-deps:
+        patterns:
+          - "*"
